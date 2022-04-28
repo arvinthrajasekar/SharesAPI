@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace SharesAPI.Models
 {
@@ -14,12 +16,24 @@ namespace SharesAPI.Models
             _shareDbContext = shareDbContext;
         }
 
-        public IEnumerable<Shares> AllShares
+        public IEnumerable<Shares> AllShares()
         {
-            get
-            {
-                return _shareDbContext.Share;
-            }
+            
+                return _shareDbContext.Share.ToList();
+            
+        }
+
+        public Task CreateAsync(Shares shares)
+        {
+            _shareDbContext.Add(shares);
+            return _shareDbContext.SaveChangesAsync();
+        }
+
+        public Shares GetShares(string name)
+        {
+            var res = _shareDbContext.Share.FirstOrDefault(s => s.Name == name);
+            
+            return res;
         }
     }
 }

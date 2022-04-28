@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharesAPI", "SharesAPI.csproj", "{A727504D-E9DA-4E33-BA3F-0AEFFB2BA8FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharesAPI", "SharesAPI.csproj", "{A727504D-E9DA-4E33-BA3F-0AEFFB2BA8FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharesAPITest", "..\SharesAPITest\SharesAPITest.csproj", "{D9D71245-581D-451F-BCBA-09790C9B9251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharesAPIApplication", "..\SharesAPIApplication\SharesAPIApplication.csproj", "{3476F070-D83D-4972-9E0C-35EE6A02E507}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A727504D-E9DA-4E33-BA3F-0AEFFB2BA8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A727504D-E9DA-4E33-BA3F-0AEFFB2BA8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A727504D-E9DA-4E33-BA3F-0AEFFB2BA8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D71245-581D-451F-BCBA-09790C9B9251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D71245-581D-451F-BCBA-09790C9B9251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D71245-581D-451F-BCBA-09790C9B9251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D71245-581D-451F-BCBA-09790C9B9251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3476F070-D83D-4972-9E0C-35EE6A02E507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3476F070-D83D-4972-9E0C-35EE6A02E507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3476F070-D83D-4972-9E0C-35EE6A02E507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3476F070-D83D-4972-9E0C-35EE6A02E507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

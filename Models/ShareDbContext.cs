@@ -6,6 +6,7 @@ namespace SharesAPI.Models
 {
     public class ShareDbContext : DbContext
     {
+        
         public ShareDbContext(DbContextOptions<ShareDbContext> options) : base(options)
         {
 

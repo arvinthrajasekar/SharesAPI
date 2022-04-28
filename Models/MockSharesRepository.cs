@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace SharesAPI.Models
 {
@@ -16,22 +17,37 @@ namespace SharesAPI.Models
                 new Shares { Name = "HDFC Bank", Price = 1516.75 },
                 new Shares { Name = "Zee Entertainment", Price = 284.75 }
 
-                 
+                 /////
             };
-        /*public Shares GetShares(string name)
+
+        public Task CreateAsync(Shares shares)
         {
-            var result = from r in AllShares
-                         where r.Name == name
-                         select new { Name = r.Name, Price = r.Price };
-            if (result.Count() == 0)
-            {
-                return NotFound("Company Does not exist.");
+            throw new System.NotImplementedException();
+        }
 
-            }
+        public Shares GetShares(string name)
+        {
+            throw new System.NotImplementedException();
+        }
 
-            return result;
-        }*/
+        IEnumerable<Shares> ISharesRepository.AllShares()
+        {
+            throw new System.NotImplementedException();
+        }
+        /*public Shares GetShares(string name)
+{
+var result = from r in AllShares
+       where r.Name == name
+       select new { Name = r.Name, Price = r.Price };
+if (result.Count() == 0)
+{
+return NotFound("Company Does not exist.");
 
-       
+}
+
+return result;
+}*/
+
+
     }
 }
